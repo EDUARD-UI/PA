@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8"/>
+  <title>Eventos</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+  <div class="cards-container">
+    <div th:each="evento : ${eventos}" class="card">
+      <h3 th:text="${evento.titulo}">Título</h3>
+      <p th:text="${evento.resumen}">Resumen</p>
+
+      <!-- Link que abre nueva pestaña -->
+      <a th:href="@{/eventos/{id}(id=${evento.id})}" target="_blank" rel="noopener noreferrer">
+        Ver detalle (abrir en pestaña)
+      </a>
+    </div>
+  </div>
+</body>
+</html>
