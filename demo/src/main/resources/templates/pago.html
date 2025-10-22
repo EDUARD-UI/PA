@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realizar Pago - Eventos Cartagena</title>
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="logo">EventosCTG</div>
+            <div class="logo">EventHive</div>
             <ul>
                 <li><a href="/">Volver al Inicio</a></li>
             </ul>
@@ -50,7 +52,7 @@
     </main>
 
     <script>
-        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+        document.getElementById('paymentForm').addEventListener('submit', function (event) {
             event.preventDefault();
             // logica de pago simulada
             alert('¡Pago procesado exitosamente! Recibirás tus tiquetes por correo.');
@@ -58,4 +60,5 @@
         });
     </script>
 </body>
+
 </html>
