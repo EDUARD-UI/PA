@@ -1,6 +1,9 @@
 **porfavor no subir nada a la rama "main" solo a rama "avance"
 despues de realizar una tarea agregar ✅ al lado**
 
+**al clonar el repo no guarden en carpeta propia ya el repo les da la carpeta
+hagan el clone en descargas, documentos o donde lo piensen guardar no en una carpeta suya**
+
 CSS:
 hay algo llamado variables, ejemplo:
 --color principal: #ffffff;
