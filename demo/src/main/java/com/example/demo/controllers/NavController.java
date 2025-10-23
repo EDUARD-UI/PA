@@ -11,11 +11,6 @@ public class NavController {
         return "index";
     }
 
-    @GetMapping("/dashboard")
-    public String dashboard() {
-        return "dashboard";
-    }
-
     @GetMapping("/pago")
     public String pago() {
         return "pago";
