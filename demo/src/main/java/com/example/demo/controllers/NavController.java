@@ -11,11 +11,6 @@ public class NavController {
         return "index";
     }
 
-    @GetMapping("/dashboard")
-    public String dashboard() {
-        return "dashboard";
-    }
-
     @GetMapping("/pago")
     public String pago() {
         return "pago";
@@ -35,5 +30,26 @@ public class NavController {
     public String perfil() {
         return "perfil";
     }
+
+    @GetMapping("/contacto")
+    public String contacto() {
+        return "contacto";
+    }
+
+    @GetMapping("/sobre_nosotros")
+    public String info() {
+        return "sobreus";
+    }
+
+    @GetMapping("/reclamos")
+    public String reclamos() {
+        return "reclamos";
+    }
+
+    @GetMapping("/admin/dashboard")
+    public String adminDashboard() {
+        return "dashboards/adminDashboard";
+    }
+
 
 }

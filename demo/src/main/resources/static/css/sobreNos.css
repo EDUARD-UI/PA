@@ -1,0 +1,38 @@
+:root {
+  --color-azul: #cce4ff;
+  --color-blanco: #ffffff;
+  --color-texto: #002855;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background-color: var(--color-blanco);
+  color: var(--color-texto);
+}
+
+header {
+  background-color: var(--color-azul);
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--color-texto);
+  border-bottom: 2px solid var(--color-azul);
+  padding-bottom: 0.3rem;
+}
+
+footer {
+  background-color: var(--color-azul);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
