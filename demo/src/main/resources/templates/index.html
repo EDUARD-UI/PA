@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descubre Eventos Increíbles en Cartagena - EventosCTG</title>
+    <title>Descubre Eventos Increíbles en Cartagena - EventHive</title>
     <link rel="stylesheet" th:href="@{/css/style.css}">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <header class="main-header">
         <nav class="navbar">
-            <div class="navbar-brand">EventosCTG</div>
+            <a href="/" class="navbar-brand">EventHive</a>
             <ul class="navbar-menu">
                 <li><a href="/" class="active">Inicio</a></li>
                 <li><a href="#eventos-destacados">Eventos</a></li>
@@ -27,9 +31,11 @@
         <div class="hero-section">
             <div class="hero-content">
                 <h1>Vive la Magia de Cartagena: Tus Eventos Favoritos te Esperan</h1>
-                <p>Explora, descubre y asegura tu lugar en los mejores conciertos, festivales y experiencias culturales de la ciudad heroica.</p>
+                <p>Explora, descubre y asegura tu lugar en los mejores conciertos, festivales y experiencias culturales
+                    de la ciudad heroica.</p>
                 <div class="search-bar-hero">
-                    <input type="text" id="searchInput" placeholder="Busca tu evento ideal por nombre, fecha o lugar..." aria-label="Buscar eventos">
+                    <input type="text" id="searchInput" placeholder="Busca tu evento ideal por nombre, fecha o lugar..."
+                        aria-label="Buscar eventos">
                     <button id="searchButton"><i class="fas fa-search"></i> Buscar</button>
                 </div>
             </div>
@@ -42,11 +48,13 @@
             <h2 class="section-title">Eventos Destacados</h2>
             <div class="event-grid">
                 <div class="event-card">
-                    <img src="https://via.placeholder.com/600x400?text=Concierto+Noche+Salsa" alt="Concierto Noche de Salsa" loading="lazy">
+                    <img src="\images\salsa_de_noche.png" alt="Concierto Noche de Salsa" loading="lazy">
                     <div class="card-content">
                         <h3>Noche de Salsa bajo las Estrellas</h3>
-                        <p class="event-meta"><i class="far fa-calendar-alt"></i> 25 Oct, 2025 <i class="fas fa-map-marker-alt"></i> Plaza de la Proclamación</p>
-                        <p class="event-description">Una noche vibrante con los mejores exponentes de la salsa, ideal para bailar y disfrutar.</p>
+                        <p class="event-meta"><i class="far fa-calendar-alt"></i> 25 Oct, 2025 <i
+                                class="fas fa-map-marker-alt"></i> Plaza de la Proclamación</p>
+                        <p class="event-description">Una noche vibrante con los mejores exponentes de la salsa, ideal
+                            para bailar y disfrutar.</p>
                         <div class="card-footer">
                             <span class="event-price">$80,000 COP</span>
                             <a href="/pago" class="btn-buy">Comprar Tiquete <i class="fas fa-ticket-alt"></i></a>
@@ -59,11 +67,13 @@
                     </div>
                 </div>
                 <div class="event-card">
-                    <img src="https://via.placeholder.com/600x400?text=Festival+Gastronomico" alt="Festival Gastronómico Caribeño" loading="lazy">
+                    <img src="\images\gastronomia_caribe.png" alt="Festival Gastronómico Caribeño" loading="lazy">
                     <div class="card-content">
                         <h3>Festival Gastronómico Caribeño</h3>
-                        <p class="event-meta"><i class="far fa-calendar-alt"></i> 1-3 Nov, 2025 <i class="fas fa-map-marker-alt"></i> Centro de Convenciones</p>
-                        <p class="event-description">Sabores auténticos del Caribe en un festival culinario inolvidable. ¡No te lo pierdas!</p>
+                        <p class="event-meta"><i class="far fa-calendar-alt"></i> 1-3 Nov, 2025 <i
+                                class="fas fa-map-marker-alt"></i> Centro de Convenciones</p>
+                        <p class="event-description">Sabores auténticos del Caribe en un festival culinario inolvidable.
+                            ¡No te lo pierdas!</p>
                         <div class="card-footer">
                             <span class="event-price">$50,000 COP</span>
                             <a href="/pago" class="btn-buy">Comprar Tiquete <i class="fas fa-ticket-alt"></i></a>
@@ -76,11 +86,13 @@
                     </div>
                 </div>
                 <div class="event-card">
-                    <img src="https://via.placeholder.com/600x400?text=Exposicion+Arte" alt="Exposición de Arte Colonial" loading="lazy">
+                    <img src="\images\ecos_coloniales.png" alt="Exposición de Arte Colonial" loading="lazy">
                     <div class="card-content">
                         <h3>Exposición "Ecos Coloniales"</h3>
-                        <p class="event-meta"><i class="far fa-calendar-alt"></i> 10 Nov - 10 Dic, 2025 <i class="fas fa-map-marker-alt"></i> Museo Naval</p>
-                        <p class="event-description">Un viaje a través del arte colonial de Cartagena y su influencia en el presente.</p>
+                        <p class="event-meta"><i class="far fa-calendar-alt"></i> 10 Nov - 10 Dic, 2025 <i
+                                class="fas fa-map-marker-alt"></i> Museo Naval</p>
+                        <p class="event-description">Un viaje a través del arte colonial de Cartagena y su influencia en
+                            el presente.</p>
                         <div class="card-footer">
                             <span class="event-price">Gratis</span>
                             <a href="#" class="btn-info">Más Información <i class="fas fa-info-circle"></i></a>
@@ -92,9 +104,10 @@
                         </div>
                     </div>
                 </div>
-                 </div>
+            </div>
             <div class="text-center mt-4">
-                <a href="#todos-los-eventos" class="btn-see-all">Ver Todos los Eventos <i class="fas fa-arrow-right"></i></a>
+                <a href="#todos-los-eventos" class="btn-see-all">Ver Todos los Eventos <i
+                        class="fas fa-arrow-right"></i></a>
             </div>
         </section>
 
@@ -121,10 +134,6 @@
                     <i class="fas fa-theater-masks fa-3x"></i>
                     <h3>Teatro</h3>
                 </a>
-                <a href="#" class="category-card">
-                    <i class="fas fa-graduation-cap fa-3x"></i>
-                    <h3>Académicos</h3>
-                </a>
             </div>
         </section>
 
@@ -140,11 +149,12 @@
     <footer class="main-footer">
         <div class="footer-content">
             <div class="footer-section about">
-                <h3>EventosCTG</h3>
-                <p>Tu plataforma número uno para descubrir y gestionar los mejores eventos en la vibrante ciudad de Cartagena.</p>
+                <h3>EventHive</h3>
+                <p>Tu plataforma número uno para descubrir y gestionar los mejores eventos en la vibrante ciudad de
+                    Cartagena.</p>
                 <div class="contact-info">
                     <p><i class="fas fa-map-marker-alt"></i> Cartagena, Colombia</p>
-                    <p><i class="fas fa-envelope"></i> info@eventosctg.com</p>
+                    <p><i class="fas fa-envelope"></i> info@eventHive.com</p>
                     <p><i class="fas fa-phone"></i> +57 3XX XXX XXXX</p>
                 </div>
             </div>
@@ -169,10 +179,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 EventosCTG. Todos los derechos reservados.</p>
+            <p>&copy; 2025 EventHive. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src=""></script>
 </body>
+
 </html>

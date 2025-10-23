@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realizar Pago - Eventos Cartagena</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/pago.css}">
 </head>
+
 <body>
     <header>
-        <nav>
-            <div class="logo">EventosCTG</div>
-            <ul>
-                <li><a href="/">Volver al Inicio</a></li>
+        <nav class="navbar">
+            <a href="/" class="navbar-brand">EventHive</a>
+            <ul class="navbar-menu">
+                <li><a href="/" class="active">Inicio</a></li>
+                <li><a href="/perfil" class="btn-profile"><i class="fas fa-user-circle"></i> Mi Perfil</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
     <main class="container">
@@ -21,11 +29,14 @@
             <div class="order-summary">
                 <h3>Resumen del Pedido</h3>
                 <p><strong>Evento:</strong> Festival de Música del Caribe</p>
+                <p><strong>Fecha:</strong> 15 de Diciembre, 2023</p>
+                <p><strong>Lugar:</strong> Centro de Convenciones, Cartagena</p>
                 <p><strong>Cantidad:</strong> 2 Tiquetes</p>
-                <p><strong>Total:</strong> $300,000 COP</p>
+                <p><strong>Precio unitario:</strong> $150,000 COP</p>
+                <p class="total"><strong>Total:</strong> $300,000 COP</p>
             </div>
             <form id="paymentForm" class="payment-form">
-                <h3>Información de Pago (Simulación)</h3>
+                <h3>Información de Pago</h3>
                 <div class="input-group">
                     <label for="card-name">Nombre en la Tarjeta</label>
                     <input type="text" id="card-name" required>
@@ -50,7 +61,7 @@
     </main>
 
     <script>
-        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+        document.getElementById('paymentForm').addEventListener('submit', function (event) {
             event.preventDefault();
             // logica de pago simulada
             alert('¡Pago procesado exitosamente! Recibirás tus tiquetes por correo.');
@@ -58,4 +69,5 @@
         });
     </script>
 </body>
+
 </html>
