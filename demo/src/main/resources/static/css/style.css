@@ -184,7 +184,6 @@ ul {
     transition: background-color var(--transition-speed);
     display: inline-block;
     text-align: center;
-
 }
 
 .btn-profile:hover {
