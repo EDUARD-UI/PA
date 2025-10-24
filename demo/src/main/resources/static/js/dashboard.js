@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // --- LÓGICA DE MODALES ---
     const modal = document.getElementById('modal-evento');
     const btnNuevoEvento = document.getElementById('btn-nuevo-evento');
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- LÓGICA DE CRUD (SIMULADA) ---
 
     // Manejar el envío del formulario del modal (Crear y Editar)
-    formEvento.addEventListener('submit', function(event) {
+    formEvento.addEventListener('submit', function (event) {
         event.preventDefault(); // Evita que la página se recargue
 
         const formData = {
@@ -77,21 +77,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Lógica para botones de Editar y Eliminar en la tabla
     const tabla = document.getElementById('tabla-eventos');
-    tabla.addEventListener('click', function(event) {
+    tabla.addEventListener('click', function (event) {
         const target = event.target;
         const fila = target.closest('tr');
 
         if (target.classList.contains('btn-editar-evento')) {
             // --- LÓGICA PARA CARGAR DATOS EN EL MODAL DE EDICIÓN ---
             modalTitulo.textContent = 'Editar Evento';
-            
+
             // Simulación de datos obtenidos de la fila
             idEventoInput.value = '1'; // El ID vendría de un atributo data-id en la fila
             document.getElementById('titulo').value = fila.cells[0].textContent;
             document.getElementById('fecha').value = "2025-10-25"; // El formato debe ser YYYY-MM-DD
             document.getElementById('lugar').value = fila.cells[2].textContent;
             document.getElementById('precio').value = parseFloat(fila.cells[3].textContent.replace('$', '').replace(',', ''));
-            
+
             abrirModal();
         }
 
@@ -100,11 +100,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (confirm('¿Estás seguro de que deseas eliminar este evento?')) {
                 const eventoId = '1'; // El ID vendría de un atributo data-id en la fila
                 console.log('Eliminando evento con ID:', eventoId);
-                
+
                 // COMENTARIO PARA BACKEND:
                 // Aquí se realizaría una petición DELETE al endpoint /api/eventos/{id}.
                 // Si tiene éxito, se elimina la fila de la tabla.
-                
+
                 fila.remove(); // Simulación de eliminación en el frontend
                 alert('Evento eliminado con éxito (simulación)');
             }
@@ -112,3 +112,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+//hola
