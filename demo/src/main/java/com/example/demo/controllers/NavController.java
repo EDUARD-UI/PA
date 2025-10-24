@@ -36,4 +36,19 @@ public class NavController {
         return "perfil";
     }
 
+    @GetMapping("/nosotros")
+    public String nosotros() {
+        return "nosotros";
+    }
+
+    @GetMapping("/terminos")
+    public String terminos() {
+        return "terminos";
+    }
+
+    @GetMapping("/contactanos")
+    public String contactanos() {
+        return "contactanos";
+    }
+
 }
